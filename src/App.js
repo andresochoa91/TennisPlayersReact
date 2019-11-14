@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Players from './Players';
-import CreationPlayer from './CreationPlayer'
+import CreationPlayer from './CreationPlayer';
+import {PlayersInfo} from './PlayersInfo';
+
 
 class App extends Component {
 	constructor(){
@@ -9,9 +11,14 @@ class App extends Component {
 			newPlayer: "Alucard",
 			age: "666",
 			newPlayer2: "",
-			age2: ""
-
+			age2: "",
+			playerI: PlayersInfo
 		}
+	}
+
+	lookFor = (event) =>{
+		const a = PlayersInfo.filter(pla => pla.name.toLowerCase().includes(event.target.value.toLowerCase()));
+		this.setState({playerI: a})
 	}
 
 	changeText = (event) =>{
@@ -31,7 +38,8 @@ class App extends Component {
 		return(
 			<div>
 				<h1>Tennis Players</h1>
-				<Players nameAmateurPlayer={this.state.newPlayer} ageAmateurPlayer={this.state.age}/>
+				<input type="search" placeholder="Look for the tennis player" onChange={this.lookFor}/>
+				<Players nameAmateurPlayer={this.state.newPlayer} ageAmateurPlayer={this.state.age} PlayersInfo={this.state.playerI}/>
 				<CreationPlayer onChangeText={this.changeText} onChangeText2={this.changeText2} onClick={this.pushButton}/>
 			</div>
 		)		
