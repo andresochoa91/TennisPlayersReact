@@ -1,20 +1,13 @@
 import React from 'react';
+import ProfessionalPlayers from './ProfessionalPlayers';
+import AmateurPlayer from './AmateurPlayer';
 import {PlayersInfo} from './PlayersInfo';
 
-const Players = () => {
+const Players = (props) => {
 		return(
 		<div>
-			{
-				PlayersInfo.map(((player, i) => {
-					return(
-						<div>
-							<h2>Name: {PlayersInfo[i].name}</h2>
-							<h3>Age: {PlayersInfo[i].age}</h3>
-							<h3>Grand Slams: {PlayersInfo[i].grandSlams}</h3>						
-						</div>
-					)
-				}))
-			}
+			<ProfessionalPlayers PlayersInfo={PlayersInfo}/>
+			<AmateurPlayer nameAmateurPlayer={props.nameAmateurPlayer} ageAmateurPlayer={props.ageAmateurPlayer}/>
 		</div>
 	)
 }
