@@ -8,7 +8,7 @@ const ProfessionalPlayers = ({PlayersInfo}) =>{
 				PlayersInfo.map(((player, i) => {
 					return(
 						<div>
-							<ProfessionalPlayersList key={i} name={PlayersInfo[i].name} age={PlayersInfo[i].age} grandSlams={PlayersInfo[i].grandSlams}/>						
+							<ProfessionalPlayersList picture={PlayersInfo[i].picture} name={PlayersInfo[i].name} age={PlayersInfo[i].age} grandSlams={PlayersInfo[i].grandSlams}/>						
 						</div>
 					)
 				}))

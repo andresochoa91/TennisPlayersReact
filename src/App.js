@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import './App.css';
 import Players from './Players';
 import CreationPlayer from './CreationPlayer';
 import {PlayersInfo} from './PlayersInfo';
+import "tachyons";
 
 class App extends Component {
   constructor(){
@@ -36,7 +36,7 @@ class App extends Component {
 
   render(){
     return(
-      <div>
+      <div className="tc bg-light-blue dib br3 pa3 ma2 bw2">
         <h1>Tennis Players</h1>
         <input type="search" placeholder="Look for the tennis player" onChange={this.lookFor}/>
         <Players nameAmateurPlayer={this.state.newPlayer} ageAmateurPlayer={this.state.age} PlayersInfo={this.state.playerI}/>
