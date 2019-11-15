@@ -3,6 +3,7 @@ import Players from '../components/Players';
 import CreationPlayer from '../components/CreationPlayer';
 import "tachyons";
 import Scroll from '../components/Scroll';
+import ErrorBoundry from '../components/ErrorBoundry';
 
 class App extends Component {
   constructor(){
@@ -59,7 +60,9 @@ class App extends Component {
         <h1 className="f1">Tennis Players</h1>
         <input type="search" placeholder="Look for the tennis player" onChange={this.lookFor}/>
         <Scroll>
-          <Players nameAmateurPlayer={newPlayer} ageAmateurPlayer={age} PlayersInfo={playerI}/>
+          <ErrorBoundry>
+            <Players nameAmateurPlayer={newPlayer} ageAmateurPlayer={age} PlayersInfo={playerI}/>
+          </ErrorBoundry>
         </Scroll>        
         <CreationPlayer onChangeText={this.changeText} onChangeText2={this.changeText2} onClick={this.pushButton}/>
       </div>
