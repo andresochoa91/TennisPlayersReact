@@ -36,8 +36,8 @@ class App extends Component {
 
   render(){
     return(
-      <div className="tc bg-light-blue dib br3 pa3 ma2 bw2 fl w-100">
-        <h1>Tennis Players</h1>
+      <div className="tc dib br3 pa3 ma2 bw2 fl w-100">
+        <h1 className="f1">Tennis Players</h1>
         <input type="search" placeholder="Look for the tennis player" onChange={this.lookFor}/>
         <Players nameAmateurPlayer={this.state.newPlayer} ageAmateurPlayer={this.state.age} PlayersInfo={this.state.playerI}/>
         <CreationPlayer onChangeText={this.changeText} onChangeText2={this.changeText2} onClick={this.pushButton}/>
