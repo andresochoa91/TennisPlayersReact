@@ -6,19 +6,24 @@ import "tachyons";
 
 class App extends Component {
   constructor(){
+    console.log("constructor");
     super()
     this.state = {
       newPlayer: "Alucard",
       age: "666",
       newPlayer2: "",
       age2: "",
-      playerI: PlayersInfo
+      playerI: []
     }
   }
 
+  componentDidMount(){
+    console.log("componentDidMount");
+    this.setState({playerI: PlayersInfo})
+  }
+
   lookFor = (event) =>{
-    const a = PlayersInfo.filter(pla => pla.name.toLowerCase().includes(event.target.value.toLowerCase()));
-    this.setState({playerI: a})
+    this.setState({playerI: PlayersInfo.filter(pla => pla.name.toLowerCase().includes(event.target.value.toLowerCase()))})
   }
 
   changeText = (event) =>{
@@ -35,6 +40,7 @@ class App extends Component {
   }
 
   render(){
+    console.log("render");
     return(
       <div className="tc dib br3 pa3 ma2 bw2 fl w-100">
         <h1 className="f1">Tennis Players</h1>
