@@ -7,9 +7,7 @@ const ProfessionalPlayers = ({PlayersInfo}) =>{
 			{
 				PlayersInfo.map(((player, i) => {
 					return(
-						<div>
-							<ProfessionalPlayersList name={PlayersInfo[i].name} username={PlayersInfo[i].username}/>						
-						</div>
+						<ProfessionalPlayersList key={i} name={PlayersInfo[i].name} username={PlayersInfo[i].username}/>							
 					)
 				}))
 			}
