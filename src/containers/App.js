@@ -23,28 +23,26 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      player: []
+      player: [0],
+      player1: [0]
     }
-  } 
-
+  }
+  
   fet = () =>{
     fetch("https://jsonplaceholder.typicode.com/users")
       .then(response=> response.json())
-      .then(users=> this.setState({player: users}))  
+      .then(users => this.setState({player: users, player1: this.state.player}))  
   }
 
   lookFor = (event) =>{
-    if(event.target.value.length === 0){
-      this.fet()
-    }else{
-      this.setState({player: this.state.player.filter(
-        pla => pla.name.toLowerCase().includes(event.target.value.toLowerCase())
-      )})      
-    }
+    console.log(event.target.value)
+    this.setState({player1: this.state.player.filter(
+      pla => pla.name.toLowerCase().includes(event.target.value.toLowerCase())
+    )})      
   }
 
   render(){
-    const { player } = this.state;
+    const { player1 } = this.state;
     return(
       <div className="tc dib br3 pa3 ma2 bw2 fl w-100">
         <h1 className="f1">Tennis Players</h1>
@@ -52,9 +50,9 @@ class App extends Component {
         <Scroll>
           <ErrorBoundry>
             {
-              this.state.player.length === 0 && this.fet()
+              player1[0] === 0 && this.fet()
             }
-            <Players PlayersInfo={ player }/>
+            <Players PlayersInfo={ player1 }/>
           </ErrorBoundry>
         </Scroll>        
       </div>
