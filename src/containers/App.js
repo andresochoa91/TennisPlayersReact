@@ -4,6 +4,21 @@ import CreationPlayer from '../components/CreationPlayer';
 import "tachyons";
 import Scroll from '../components/Scroll';
 import ErrorBoundry from '../components/ErrorBoundry';
+import { connect } from 'react-redux';
+
+import { setSearchField } from '../actions';
+
+const mapStateToProps = state => {
+  return {
+    SearchField: state.searchPlayer.searchField
+  }
+}
+
+//const mapDispatchToProps = (dispatch) => {
+//  return {
+//    lookFor: (event) => dispatch(setSearchField(event.target.value))
+//  }  
+//} 
 
 class App extends Component {
   constructor(){
@@ -67,4 +82,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default /*connect(mapStateToProps, mapDispatchToProps)*/(App);
