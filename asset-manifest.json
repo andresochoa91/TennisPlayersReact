@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/TennisPlayersReact/static/css/main.05e593cd.chunk.css",
-    "main.js": "/TennisPlayersReact/static/js/main.0d5e106a.chunk.js",
-    "main.js.map": "/TennisPlayersReact/static/js/main.0d5e106a.chunk.js.map",
-    "runtime-main.js": "/TennisPlayersReact/static/js/runtime-main.5c6b4dbc.js",
-    "runtime-main.js.map": "/TennisPlayersReact/static/js/runtime-main.5c6b4dbc.js.map",
-    "static/css/2.299a5230.chunk.css": "/TennisPlayersReact/static/css/2.299a5230.chunk.css",
-    "static/js/2.2744ca4e.chunk.js": "/TennisPlayersReact/static/js/2.2744ca4e.chunk.js",
-    "static/js/2.2744ca4e.chunk.js.map": "/TennisPlayersReact/static/js/2.2744ca4e.chunk.js.map",
+    "main.css": "/TennisPlayersReact/static/css/main.e5da0898.chunk.css",
+    "main.js": "/TennisPlayersReact/static/js/main.8d1ca215.chunk.js",
+    "main.js.map": "/TennisPlayersReact/static/js/main.8d1ca215.chunk.js.map",
+    "runtime-main.js": "/TennisPlayersReact/static/js/runtime-main.168ebc3d.js",
+    "runtime-main.js.map": "/TennisPlayersReact/static/js/runtime-main.168ebc3d.js.map",
+    "static/css/2.07548e1c.chunk.css": "/TennisPlayersReact/static/css/2.07548e1c.chunk.css",
+    "static/js/2.5b8119f8.chunk.js": "/TennisPlayersReact/static/js/2.5b8119f8.chunk.js",
+    "static/js/2.5b8119f8.chunk.js.map": "/TennisPlayersReact/static/js/2.5b8119f8.chunk.js.map",
     "index.html": "/TennisPlayersReact/index.html",
-    "precache-manifest.507bfdf729830bd27cf09150008145a4.js": "/TennisPlayersReact/precache-manifest.507bfdf729830bd27cf09150008145a4.js",
+    "precache-manifest.1a6cb1dfcba639589ff6876249cdfb18.js": "/TennisPlayersReact/precache-manifest.1a6cb1dfcba639589ff6876249cdfb18.js",
     "service-worker.js": "/TennisPlayersReact/service-worker.js",
-    "static/css/2.299a5230.chunk.css.map": "/TennisPlayersReact/static/css/2.299a5230.chunk.css.map",
-    "static/css/main.05e593cd.chunk.css.map": "/TennisPlayersReact/static/css/main.05e593cd.chunk.css.map"
+    "static/css/2.07548e1c.chunk.css.map": "/TennisPlayersReact/static/css/2.07548e1c.chunk.css.map",
+    "static/css/main.e5da0898.chunk.css.map": "/TennisPlayersReact/static/css/main.e5da0898.chunk.css.map",
+    "static/js/2.5b8119f8.chunk.js.LICENSE.txt": "/TennisPlayersReact/static/js/2.5b8119f8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5c6b4dbc.js",
-    "static/css/2.299a5230.chunk.css",
-    "static/js/2.2744ca4e.chunk.js",
-    "static/css/main.05e593cd.chunk.css",
-    "static/js/main.0d5e106a.chunk.js"
+    "static/js/runtime-main.168ebc3d.js",
+    "static/css/2.07548e1c.chunk.css",
+    "static/js/2.5b8119f8.chunk.js",
+    "static/css/main.e5da0898.chunk.css",
+    "static/js/main.8d1ca215.chunk.js"
   ]
 }
